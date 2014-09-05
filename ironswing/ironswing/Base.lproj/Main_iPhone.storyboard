@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - Root View Controller-->
+        <!--Table View Controller - IronSwing-->
         <scene sceneID="Rk7-G1-C9t">
             <objects>
                 <tableViewController id="4rl-a0-593" sceneMemberID="viewController">
@@ -57,7 +57,7 @@
                             <outlet property="delegate" destination="4rl-a0-593" id="JKi-Ip-Nck"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="dNx-2s-FFq"/>
+                    <navigationItem key="navigationItem" title="IronSwing" id="dNx-2s-FFq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GRb-IK-aeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
