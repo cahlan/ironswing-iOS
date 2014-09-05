@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		81D9E8B419BA7781003EB99B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D9E8B319BA7781003EB99B /* FacebookSDK.framework */; };
-		81D9E8B719BA7866003EB99B /* GolferSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8B619BA7866003EB99B /* GolferSignupViewController.m */; };
+		81D9E8B719BA7866003EB99B /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8B619BA7866003EB99B /* SignupViewController.m */; };
 		81D9E8BA19BA79F0003EB99B /* FacebookService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8B919BA79F0003EB99B /* FacebookService.m */; };
 		81D9E8BD19BA7AA1003EB99B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8BC19BA7AA1003EB99B /* User.m */; };
 		ACD135EF19BA6BC800838FF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135EE19BA6BC800838FF3 /* Foundation.framework */; };
@@ -40,8 +40,8 @@
 
 /* Begin PBXFileReference section */
 		81D9E8B319BA7781003EB99B /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
-		81D9E8B519BA7866003EB99B /* GolferSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GolferSignupViewController.h; sourceTree = "<group>"; };
-		81D9E8B619BA7866003EB99B /* GolferSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GolferSignupViewController.m; sourceTree = "<group>"; };
+		81D9E8B519BA7866003EB99B /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		81D9E8B619BA7866003EB99B /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
 		81D9E8B819BA79F0003EB99B /* FacebookService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookService.h; sourceTree = "<group>"; };
 		81D9E8B919BA79F0003EB99B /* FacebookService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookService.m; sourceTree = "<group>"; };
 		81D9E8BB19BA7AA1003EB99B /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -129,8 +129,8 @@
 			children = (
 				81D9E8B819BA79F0003EB99B /* FacebookService.h */,
 				81D9E8B919BA79F0003EB99B /* FacebookService.m */,
-				81D9E8B519BA7866003EB99B /* GolferSignupViewController.h */,
-				81D9E8B619BA7866003EB99B /* GolferSignupViewController.m */,
+				81D9E8B519BA7866003EB99B /* SignupViewController.h */,
+				81D9E8B619BA7866003EB99B /* SignupViewController.m */,
 				ACD1360919BA6BC800838FF3 /* Images.xcassets */,
 				ACD1360319BA6BC800838FF3 /* Main_iPad.storyboard */,
 				ACD1360019BA6BC800838FF3 /* Main_iPhone.storyboard */,
@@ -279,7 +279,7 @@
 				81D9E8BD19BA7AA1003EB99B /* User.m in Sources */,
 				81D9E8BA19BA79F0003EB99B /* FacebookService.m in Sources */,
 				ACD1360819BA6BC800838FF3 /* RAViewController.m in Sources */,
-				81D9E8B719BA7866003EB99B /* GolferSignupViewController.m in Sources */,
+				81D9E8B719BA7866003EB99B /* SignupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

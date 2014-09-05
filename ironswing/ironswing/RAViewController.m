@@ -7,11 +7,12 @@
 //
 
 #import "RAViewController.h"
+#import "User.h"
 
 @interface RAViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *playerButton;
-@property (weak, nonatomic) IBOutlet UIButton *coachButton;
-
+@property (weak, nonatomic) IBOutlet UIButton *proButton;
+@property (weak, nonatomic) User *appUser;
 @end
 
 @implementation RAViewController
@@ -19,6 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.appUser = [User instance];
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,10 +29,10 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)startPlayer:(id)sender {
-    NSLog(@"Get Started Player");
+    self.appUser.type = @"player";
 }
-- (IBAction)startCoach:(id)sender {
-    NSLog(@"Get Started Coach");
+- (IBAction)startPro:(id)sender {
+    self.appUser.type = @"pro";
 
 }
 

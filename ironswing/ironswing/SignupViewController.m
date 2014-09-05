@@ -6,18 +6,18 @@
 //  Copyright (c) 2014 Ryan Allred. All rights reserved.
 //
 
-#import "GolferSignupViewController.h"
+#import "SignupViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import "User.h"
 
-@interface GolferSignupViewController ()
+@interface SignupViewController ()
 
 @property (weak, nonatomic) IBOutlet FBLoginView *loginButton;
 @property (weak, nonatomic) IBOutlet FBProfilePictureView *profilePicture;
 
 @end
 
-@implementation GolferSignupViewController
+@implementation SignupViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
