@@ -25,5 +25,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)newPlayer:(id)sender {
+    
+    
+}
+- (IBAction)newCoach:(id)sender {
+    
+}
 
 @end

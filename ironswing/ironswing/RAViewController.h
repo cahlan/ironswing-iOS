@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface RAViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *startPlayer;
+@property (weak, nonatomic) IBOutlet UIButton *startCoach;
 
 @end
