@@ -51,6 +51,8 @@
     _user.fb_id = user.objectID;
     
     self.profilePicture.profileID = _user.fb_id;
+    
+    //go to next screen
 }
 
 @end

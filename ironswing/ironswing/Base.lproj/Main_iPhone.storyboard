@@ -64,6 +64,44 @@
             </objects>
             <point key="canvasLocation" x="-200" y="-125"/>
         </scene>
+        <!--Capture View Controller-->
+        <scene sceneID="SVD-cY-jl7">
+            <objects>
+                <viewController id="kHh-2P-bUW" customClass="CaptureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CAT-pS-qUR"/>
+                        <viewControllerLayoutGuide type="bottom" id="z8R-tq-wU5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OXd-Y8-s13">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DKs-6p-hZN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nst-o1-STs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1094" y="-173"/>
+        </scene>
+        <!--Queue View Controller-->
+        <scene sceneID="f9b-0I-Acr">
+            <objects>
+                <viewController id="7uF-cX-IXF" customClass="QueueViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tux-b0-E7U"/>
+                        <viewControllerLayoutGuide type="bottom" id="CU4-kT-j3e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vMg-oO-0yg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wye-ah-n81"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v0Z-QH-hjL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1094" y="510"/>
+        </scene>
         <!--Signup View Controller-->
         <scene sceneID="4ZM-kl-M4h">
             <objects>
@@ -86,6 +124,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.8994140625" green="0.8994140625" blue="0.8994140625" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmE-dH-WnM">
+                                <rect key="frame" x="133" y="352" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Capture">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="kHh-2P-bUW" kind="push" id="afV-ZV-Ll8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h31-LH-QBr">
+                                <rect key="frame" x="137" y="401" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Queue">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7uF-cX-IXF" kind="push" id="AFp-ms-Il6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

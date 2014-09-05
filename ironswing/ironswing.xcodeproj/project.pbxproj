@@ -11,6 +11,8 @@
 		81D9E8B719BA7866003EB99B /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8B619BA7866003EB99B /* SignupViewController.m */; };
 		81D9E8BA19BA79F0003EB99B /* FacebookService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8B919BA79F0003EB99B /* FacebookService.m */; };
 		81D9E8BD19BA7AA1003EB99B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8BC19BA7AA1003EB99B /* User.m */; };
+		81D9E8C019BA8528003EB99B /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8BF19BA8528003EB99B /* CaptureViewController.m */; };
+		81D9E8C319BA8535003EB99B /* QueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8C219BA8535003EB99B /* QueueViewController.m */; };
 		ACD135EF19BA6BC800838FF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135EE19BA6BC800838FF3 /* Foundation.framework */; };
 		ACD135F119BA6BC800838FF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135F019BA6BC800838FF3 /* CoreGraphics.framework */; };
 		ACD135F319BA6BC800838FF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135F219BA6BC800838FF3 /* UIKit.framework */; };
@@ -46,6 +48,10 @@
 		81D9E8B919BA79F0003EB99B /* FacebookService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookService.m; sourceTree = "<group>"; };
 		81D9E8BB19BA7AA1003EB99B /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		81D9E8BC19BA7AA1003EB99B /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		81D9E8BE19BA8528003EB99B /* CaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
+		81D9E8BF19BA8528003EB99B /* CaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
+		81D9E8C119BA8535003EB99B /* QueueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueViewController.h; sourceTree = "<group>"; };
+		81D9E8C219BA8535003EB99B /* QueueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueViewController.m; sourceTree = "<group>"; };
 		ACD135EB19BA6BC800838FF3 /* ironswing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ironswing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD135EE19BA6BC800838FF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ACD135F019BA6BC800838FF3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -127,20 +133,24 @@
 		ACD135F419BA6BC800838FF3 /* ironswing */ = {
 			isa = PBXGroup;
 			children = (
+				81D9E8BE19BA8528003EB99B /* CaptureViewController.h */,
 				81D9E8B819BA79F0003EB99B /* FacebookService.h */,
-				81D9E8B919BA79F0003EB99B /* FacebookService.m */,
+				81D9E8C119BA8535003EB99B /* QueueViewController.h */,
+				ACD135FD19BA6BC800838FF3 /* RAAppDelegate.h */,
+				ACD1360619BA6BC800838FF3 /* RAViewController.h */,
 				81D9E8B519BA7866003EB99B /* SignupViewController.h */,
+				81D9E8BB19BA7AA1003EB99B /* User.h */,
+				81D9E8BF19BA8528003EB99B /* CaptureViewController.m */,
+				81D9E8B919BA79F0003EB99B /* FacebookService.m */,
+				81D9E8C219BA8535003EB99B /* QueueViewController.m */,
+				ACD135FE19BA6BC800838FF3 /* RAAppDelegate.m */,
+				ACD1360719BA6BC800838FF3 /* RAViewController.m */,
 				81D9E8B619BA7866003EB99B /* SignupViewController.m */,
+				81D9E8BC19BA7AA1003EB99B /* User.m */,
 				ACD1360919BA6BC800838FF3 /* Images.xcassets */,
 				ACD1360319BA6BC800838FF3 /* Main_iPad.storyboard */,
 				ACD1360019BA6BC800838FF3 /* Main_iPhone.storyboard */,
-				ACD135FD19BA6BC800838FF3 /* RAAppDelegate.h */,
-				ACD135FE19BA6BC800838FF3 /* RAAppDelegate.m */,
-				ACD1360619BA6BC800838FF3 /* RAViewController.h */,
-				ACD1360719BA6BC800838FF3 /* RAViewController.m */,
 				ACD135F519BA6BC800838FF3 /* Supporting Files */,
-				81D9E8BB19BA7AA1003EB99B /* User.h */,
-				81D9E8BC19BA7AA1003EB99B /* User.m */,
 			);
 			path = ironswing;
 			sourceTree = "<group>";
@@ -278,8 +288,10 @@
 				ACD135FF19BA6BC800838FF3 /* RAAppDelegate.m in Sources */,
 				81D9E8BD19BA7AA1003EB99B /* User.m in Sources */,
 				81D9E8BA19BA79F0003EB99B /* FacebookService.m in Sources */,
+				81D9E8C319BA8535003EB99B /* QueueViewController.m in Sources */,
 				ACD1360819BA6BC800838FF3 /* RAViewController.m in Sources */,
 				81D9E8B719BA7866003EB99B /* SignupViewController.m in Sources */,
+				81D9E8C019BA8528003EB99B /* CaptureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
