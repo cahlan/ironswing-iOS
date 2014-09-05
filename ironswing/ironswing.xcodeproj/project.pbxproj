@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81D9E8B419BA7781003EB99B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D9E8B319BA7781003EB99B /* FacebookSDK.framework */; };
+		81D9E8B719BA7866003EB99B /* GolferSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8B619BA7866003EB99B /* GolferSignupViewController.m */; };
 		ACD135EF19BA6BC800838FF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135EE19BA6BC800838FF3 /* Foundation.framework */; };
 		ACD135F119BA6BC800838FF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135F019BA6BC800838FF3 /* CoreGraphics.framework */; };
 		ACD135F319BA6BC800838FF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135F219BA6BC800838FF3 /* UIKit.framework */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81D9E8B319BA7781003EB99B /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		81D9E8B519BA7866003EB99B /* GolferSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GolferSignupViewController.h; sourceTree = "<group>"; };
+		81D9E8B619BA7866003EB99B /* GolferSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GolferSignupViewController.m; sourceTree = "<group>"; };
 		ACD135EB19BA6BC800838FF3 /* ironswing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ironswing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD135EE19BA6BC800838FF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ACD135F019BA6BC800838FF3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACD135F119BA6BC800838FF3 /* CoreGraphics.framework in Frameworks */,
+				81D9E8B419BA7781003EB99B /* FacebookSDK.framework in Frameworks */,
 				ACD135F319BA6BC800838FF3 /* UIKit.framework in Frameworks */,
 				ACD135EF19BA6BC800838FF3 /* Foundation.framework in Frameworks */,
 			);
@@ -103,6 +109,7 @@
 		ACD135ED19BA6BC800838FF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				81D9E8B319BA7781003EB99B /* FacebookSDK.framework */,
 				ACD135EE19BA6BC800838FF3 /* Foundation.framework */,
 				ACD135F019BA6BC800838FF3 /* CoreGraphics.framework */,
 				ACD135F219BA6BC800838FF3 /* UIKit.framework */,
@@ -117,6 +124,8 @@
 				ACD135FD19BA6BC800838FF3 /* RAAppDelegate.h */,
 				ACD135FE19BA6BC800838FF3 /* RAAppDelegate.m */,
 				ACD1360019BA6BC800838FF3 /* Main_iPhone.storyboard */,
+				81D9E8B519BA7866003EB99B /* GolferSignupViewController.h */,
+				81D9E8B619BA7866003EB99B /* GolferSignupViewController.m */,
 				ACD1360319BA6BC800838FF3 /* Main_iPad.storyboard */,
 				ACD1360619BA6BC800838FF3 /* RAViewController.h */,
 				ACD1360719BA6BC800838FF3 /* RAViewController.m */,
@@ -215,6 +224,7 @@
 			knownRegions = (
 				en,
 				Base,
+				he,
 			);
 			mainGroup = ACD135E219BA6BC800838FF3;
 			productRefGroup = ACD135EC19BA6BC800838FF3 /* Products */;
@@ -257,6 +267,7 @@
 				ACD135FB19BA6BC800838FF3 /* main.m in Sources */,
 				ACD135FF19BA6BC800838FF3 /* RAAppDelegate.m in Sources */,
 				ACD1360819BA6BC800838FF3 /* RAViewController.m in Sources */,
+				81D9E8B719BA7866003EB99B /* GolferSignupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,6 +402,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/cahlan/Documents/FacebookSDK,
+					/Users/cahlan/Documents/FacebookSDK/FBAudienceNetwork,
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ironswing/ironswing-Prefix.pch";
 				INFOPLIST_FILE = "ironswing/ironswing-Info.plist";
@@ -404,6 +421,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/cahlan/Documents/FacebookSDK,
+					/Users/cahlan/Documents/FacebookSDK/FBAudienceNetwork,
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ironswing/ironswing-Prefix.pch";
 				INFOPLIST_FILE = "ironswing/ironswing-Info.plist";
@@ -471,6 +494,7 @@
 				ACD1362219BA6BC800838FF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACD1362319BA6BC800838FF3 /* Build configuration list for PBXNativeTarget "ironswingTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +503,7 @@
 				ACD1362519BA6BC800838FF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
