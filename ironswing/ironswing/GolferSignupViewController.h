@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 
-@interface GolferSignupViewController : UIViewController
+@interface GolferSignupViewController : UIViewController <FBLoginViewDelegate>
 
 @end

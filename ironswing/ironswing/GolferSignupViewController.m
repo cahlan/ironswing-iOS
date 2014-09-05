@@ -8,8 +8,12 @@
 
 #import "GolferSignupViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
+#import "User.h"
 
 @interface GolferSignupViewController ()
+
+@property (weak, nonatomic) IBOutlet FBLoginView *loginButton;
+@property (weak, nonatomic) IBOutlet FBProfilePictureView *profilePicture;
 
 @end
 
@@ -27,9 +31,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.loginButton.delegate = self;
+    /*
     FBLoginView *loginView = [[FBLoginView alloc] init];
     loginView.center = self.view.center;
     [self.view addSubview:loginView];
+     */
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,15 +45,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user {
+    
+    User *_user = [User instance];
+    _user.fb_id = user.objectID;
+    
+    self.profilePicture.profileID = _user.fb_id;
 }
-*/
 
 @end

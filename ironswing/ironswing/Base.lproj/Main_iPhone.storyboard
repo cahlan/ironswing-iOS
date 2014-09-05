@@ -75,9 +75,25 @@
                     <view key="view" contentMode="scaleToFill" id="elr-0M-TAA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IxI-x2-Qbc" customClass="FBLoginView">
+                                <rect key="frame" x="71" y="256" width="179" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="0.8994140625" green="0.8994140625" blue="0.8994140625" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2bh-dz-InG" customClass="FBProfilePictureView">
+                                <rect key="frame" x="115" y="83" width="91" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8994140625" green="0.8994140625" blue="0.8994140625" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="8zg-Tc-xjz"/>
+                    <connections>
+                        <outlet property="loginButton" destination="IxI-x2-Qbc" id="mui-Ch-j4q"/>
+                        <outlet property="profilePicture" destination="2bh-dz-InG" id="1lw-cB-agn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2br-0H-QlM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
