@@ -9,6 +9,8 @@
 #import "RAViewController.h"
 
 @interface RAViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *playerButton;
+@property (weak, nonatomic) IBOutlet UIButton *coachButton;
 
 @end
 
@@ -17,7 +19,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,12 +26,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)newPlayer:(id)sender {
-    
-    
+- (IBAction)startPlayer:(id)sender {
+    NSLog(@"Get Started Player");
 }
-- (IBAction)newCoach:(id)sender {
-    
+- (IBAction)startCoach:(id)sender {
+    NSLog(@"Get Started Coach");
+
 }
 
 @end

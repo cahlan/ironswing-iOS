@@ -124,11 +124,11 @@
 				ACD135FD19BA6BC800838FF3 /* RAAppDelegate.h */,
 				ACD135FE19BA6BC800838FF3 /* RAAppDelegate.m */,
 				ACD1360019BA6BC800838FF3 /* Main_iPhone.storyboard */,
-				81D9E8B519BA7866003EB99B /* GolferSignupViewController.h */,
-				81D9E8B619BA7866003EB99B /* GolferSignupViewController.m */,
 				ACD1360319BA6BC800838FF3 /* Main_iPad.storyboard */,
 				ACD1360619BA6BC800838FF3 /* RAViewController.h */,
 				ACD1360719BA6BC800838FF3 /* RAViewController.m */,
+				81D9E8B519BA7866003EB99B /* GolferSignupViewController.h */,
+				81D9E8B619BA7866003EB99B /* GolferSignupViewController.m */,
 				ACD1360919BA6BC800838FF3 /* Images.xcassets */,
 				ACD135F519BA6BC800838FF3 /* Supporting Files */,
 			);

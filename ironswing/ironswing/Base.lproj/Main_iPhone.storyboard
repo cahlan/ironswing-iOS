@@ -1,86 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mcC-Tm-Kd1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mcC-Tm-Kd1">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - IronSwing-->
-        <scene sceneID="Rk7-G1-C9t">
-            <objects>
-                <tableViewController id="4rl-a0-593" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="2yg-B3-Ool">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableFooterView" appearanceType="aqua" contentMode="scaleToFill" id="lfL-lq-V0S">
-                            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Get Feedback on you Golf Swing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usv-uO-oUy">
-                                    <rect key="frame" x="33" y="67" width="254" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I'm a Professional Golf Coach" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6un-yk-ffg">
-                                    <rect key="frame" x="46" y="260" width="229" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfy-a8-2P8">
-                                    <rect key="frame" x="120" y="298" width="80" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Get Started">
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                    <connections>
-                                        <segue destination="8wh-x5-4na" kind="push" id="tie-cE-GoY"/>
-                                    </connections>
-                                </button>
-                                <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yF4-lM-bup">
-                                    <rect key="frame" x="120" y="102" width="80" height="30"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Get Started">
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                    <connections>
-                                        <segue destination="L4y-DN-gyU" kind="push" id="EW9-sD-ssC"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        </view>
-                        <connections>
-                            <outlet property="dataSource" destination="4rl-a0-593" id="JhV-Vl-uPq"/>
-                            <outlet property="delegate" destination="4rl-a0-593" id="JKi-Ip-Nck"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="IronSwing" id="dNx-2s-FFq"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GRb-IK-aeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-100" y="-125"/>
-        </scene>
         <!--View Controller-->
-        <scene sceneID="ZPX-I7-rxg">
+        <scene sceneID="EmO-9U-wjB">
             <objects>
-                <viewController id="8wh-x5-4na" sceneMemberID="viewController">
+                <viewController id="BOA-d6-GNK" customClass="RAViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hRk-4b-s43"/>
-                        <viewControllerLayoutGuide type="bottom" id="Je0-7J-RmE"/>
+                        <viewControllerLayoutGuide type="top" id="bbC-Z2-AvC"/>
+                        <viewControllerLayoutGuide type="bottom" id="BEY-6T-Kim"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2PB-ni-tnG">
+                    <view key="view" contentMode="scaleToFill" id="MDe-Em-OCO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Get Feedback on you Golf Swing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usv-uO-oUy">
+                                <rect key="frame" x="33" y="144" width="254" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yF4-lM-bup">
+                                <rect key="frame" x="120" y="195" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlayer:" destination="BOA-d6-GNK" eventType="touchUpInside" id="8Gy-QC-WsJ"/>
+                                    <segue destination="L4y-DN-gyU" kind="push" id="Rhj-7J-9Gu"/>
+                                </connections>
+                            </button>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I'm a Professional Golf Coach" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6un-yk-ffg">
+                                <rect key="frame" x="46" y="330" width="229" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfy-a8-2P8">
+                                <rect key="frame" x="120" y="389" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startCoach:" destination="BOA-d6-GNK" eventType="touchUpInside" id="Fg2-XL-LRf"/>
+                                    <segue destination="L4y-DN-gyU" kind="push" id="hlP-Eb-Xwj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jO7-Jp-HPt"/>
+                    <navigationItem key="navigationItem" id="gX7-bX-Pz5"/>
+                    <connections>
+                        <outlet property="coachButton" destination="gfy-a8-2P8" id="Ou5-ql-D1L"/>
+                        <outlet property="playerButton" destination="yF4-lM-bup" id="UUu-Cf-YUg"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RUf-ei-xGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z5E-Od-6I8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="395" y="280"/>
+            <point key="canvasLocation" x="-200" y="-125"/>
         </scene>
         <!--Golfer Signup View Controller-->
         <scene sceneID="4ZM-kl-M4h">
@@ -99,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2br-0H-QlM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407" y="-468"/>
+            <point key="canvasLocation" x="658" y="-140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YDi-2f-aJ4">
@@ -109,7 +91,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="4rl-a0-593" kind="relationship" relationship="rootViewController" id="L7M-bl-JlF"/>
+                        <segue destination="BOA-d6-GNK" kind="relationship" relationship="rootViewController" id="LzJ-ib-gr5"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPA-zn-JhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -122,4 +104,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="hlP-Eb-Xwj"/>
+    </inferredMetricsTieBreakers>
 </document>
