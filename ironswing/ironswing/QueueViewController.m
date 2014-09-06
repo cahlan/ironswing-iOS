@@ -75,7 +75,6 @@
     return [self.ds.submissions count];
 }
 
-
 /*
 #pragma mark - Navigation
 

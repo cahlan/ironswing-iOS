@@ -18,8 +18,6 @@
 		81D9E8CF19BAB9AE003EB99B /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8CE19BAB9AE003EB99B /* Utils.m */; };
 		81D9E8D219BAC920003EB99B /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8D119BAC920003EB99B /* DataStore.m */; };
 		81D9E8D519BB53E5003EB99B /* Submission.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8D419BB53E5003EB99B /* Submission.m */; };
-		81D9E8D919BB6A33003EB99B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D9E8D719BB69FA003EB99B /* ImageIO.framework */; };
-		81D9E8DC19BB6B93003EB99B /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 81D9E8DB19BB6B93003EB99B /* placeholder.png */; };
 		ACD135EF19BA6BC800838FF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135EE19BA6BC800838FF3 /* Foundation.framework */; };
 		ACD135F119BA6BC800838FF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135F019BA6BC800838FF3 /* CoreGraphics.framework */; };
 		ACD135F319BA6BC800838FF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135F219BA6BC800838FF3 /* UIKit.framework */; };
@@ -36,9 +34,8 @@
 		ACD1361B19BA6BC800838FF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACD1361919BA6BC800838FF3 /* InfoPlist.strings */; };
 		ACD1361D19BA6BC800838FF3 /* ironswingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD1361C19BA6BC800838FF3 /* ironswingTests.m */; };
 		ACD1362819BA866A00838FF3 /* RAPlayerQueueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD1362719BA866A00838FF3 /* RAPlayerQueueCell.m */; };
+		ACD1362A19BA9CA500838FF3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD1362919BA9CA500838FF3 /* FacebookSDK.framework */; };
 		ACD1363019BABB0A00838FF3 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD1362F19BABB0A00838FF3 /* PageViewController.m */; };
-		ACD1363419BB6A3600838FF3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD1363319BB6A3600838FF3 /* FacebookSDK.framework */; };
-		ACD1363719BB6BB000838FF3 /* sweet-golf-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = ACD1363619BB6BB000838FF3 /* sweet-golf-bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +70,6 @@
 		81D9E8D119BAC920003EB99B /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
 		81D9E8D319BB53E5003EB99B /* Submission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Submission.h; sourceTree = "<group>"; };
 		81D9E8D419BB53E5003EB99B /* Submission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Submission.m; sourceTree = "<group>"; };
-		81D9E8D719BB69FA003EB99B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
-		81D9E8DB19BB6B93003EB99B /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		A2E8FC366218440187075986 /* libPods-ironswing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ironswing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD135EB19BA6BC800838FF3 /* ironswing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ironswing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD135EE19BA6BC800838FF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,10 +93,9 @@
 		ACD1361C19BA6BC800838FF3 /* ironswingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ironswingTests.m; sourceTree = "<group>"; };
 		ACD1362619BA866A00838FF3 /* RAPlayerQueueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAPlayerQueueCell.h; sourceTree = "<group>"; };
 		ACD1362719BA866A00838FF3 /* RAPlayerQueueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAPlayerQueueCell.m; sourceTree = "<group>"; };
+		ACD1362919BA9CA500838FF3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		ACD1362E19BABB0A00838FF3 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
 		ACD1362F19BABB0A00838FF3 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
-		ACD1363319BB6A3600838FF3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
-		ACD1363619BB6BB000838FF3 /* sweet-golf-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sweet-golf-bg.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81D9E8D919BB6A33003EB99B /* ImageIO.framework in Frameworks */,
 				ACD135F119BA6BC800838FF3 /* CoreGraphics.framework in Frameworks */,
-				ACD1363419BB6A3600838FF3 /* FacebookSDK.framework in Frameworks */,
+				ACD1362A19BA9CA500838FF3 /* FacebookSDK.framework in Frameworks */,
 				ACD135F319BA6BC800838FF3 /* UIKit.framework in Frameworks */,
 				ACD135EF19BA6BC800838FF3 /* Foundation.framework in Frameworks */,
 				64BC48D0551B46F29C3A4F6D /* libPods-ironswing.a in Frameworks */,
@@ -144,14 +137,6 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		81D9E8DA19BB6B89003EB99B /* assets */ = {
-			isa = PBXGroup;
-			children = (
-				81D9E8DB19BB6B93003EB99B /* placeholder.png */,
-			);
-			name = assets;
-			sourceTree = "<group>";
-		};
 		ACD135E219BA6BC800838FF3 = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +160,6 @@
 		ACD135ED19BA6BC800838FF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				81D9E8D719BB69FA003EB99B /* ImageIO.framework */,
 				ACD1362919BA9CA500838FF3 /* FacebookSDK.framework */,
 				ACD135EE19BA6BC800838FF3 /* Foundation.framework */,
 				ACD135F019BA6BC800838FF3 /* CoreGraphics.framework */,
@@ -189,7 +173,6 @@
 		ACD135F419BA6BC800838FF3 /* ironswing */ = {
 			isa = PBXGroup;
 			children = (
-				81D9E8DA19BB6B89003EB99B /* assets */,
 				81D9E8D619BB5435003EB99B /* Models */,
 				81D9E8BE19BA8528003EB99B /* CaptureViewController.h */,
 				81D9E8BF19BA8528003EB99B /* CaptureViewController.m */,
@@ -208,8 +191,13 @@
 				81D9E8B519BA7866003EB99B /* SignupViewController.h */,
 				81D9E8B619BA7866003EB99B /* SignupViewController.m */,
 				ACD1360919BA6BC800838FF3 /* Images.xcassets */,
+<<<<<<< HEAD
+				ACD1360319BA6BC800838FF3 /* Main_iPad.storyboard */,
+				ACD1360019BA6BC800838FF3 /* Main_iPhone.storyboard */,
 				ACD1362E19BABB0A00838FF3 /* PageViewController.h */,
 				ACD1362F19BABB0A00838FF3 /* PageViewController.m */,
+=======
+>>>>>>> b648d8c7e061bfa9b57c5d5368e943ca40944278
 				ACD135F519BA6BC800838FF3 /* Supporting Files */,
 				81D9E8C419BAB626003EB99B /* DataService.h */,
 				81D9E8C519BAB626003EB99B /* DataService.m */,
@@ -224,7 +212,6 @@
 		ACD135F519BA6BC800838FF3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				ACD1363619BB6BB000838FF3 /* sweet-golf-bg.png */,
 				ACD135F619BA6BC800838FF3 /* ironswing-Info.plist */,
 				ACD135F719BA6BC800838FF3 /* InfoPlist.strings */,
 				ACD135FA19BA6BC800838FF3 /* main.m */,
@@ -331,11 +318,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD1363719BB6BB000838FF3 /* sweet-golf-bg.png in Resources */,
 				ACD1360519BA6BC800838FF3 /* Main_iPad.storyboard in Resources */,
 				ACD1360A19BA6BC800838FF3 /* Images.xcassets in Resources */,
 				ACD1360219BA6BC800838FF3 /* Main_iPhone.storyboard in Resources */,
-				81D9E8DC19BB6B93003EB99B /* placeholder.png in Resources */,
 				ACD135F919BA6BC800838FF3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
