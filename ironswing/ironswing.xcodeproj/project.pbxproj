@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64BC48D0551B46F29C3A4F6D /* libPods-ironswing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E8FC366218440187075986 /* libPods-ironswing.a */; };
 		81D9E8B719BA7866003EB99B /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8B619BA7866003EB99B /* SignupViewController.m */; };
 		81D9E8BA19BA79F0003EB99B /* FacebookService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8B919BA79F0003EB99B /* FacebookService.m */; };
 		81D9E8BD19BA7AA1003EB99B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8BC19BA7AA1003EB99B /* User.m */; };
 		81D9E8C019BA8528003EB99B /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8BF19BA8528003EB99B /* CaptureViewController.m */; };
 		81D9E8C319BA8535003EB99B /* QueueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8C219BA8535003EB99B /* QueueViewController.m */; };
+		81D9E8C619BAB626003EB99B /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8C519BAB626003EB99B /* DataService.m */; };
+		81D9E8C919BAB8B9003EB99B /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8C819BAB8B9003EB99B /* Settings.m */; };
+		81D9E8CF19BAB9AE003EB99B /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8CE19BAB9AE003EB99B /* Utils.m */; };
+		81D9E8D219BAC920003EB99B /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8D119BAC920003EB99B /* DataStore.m */; };
+		81D9E8D519BB53E5003EB99B /* Submission.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8D419BB53E5003EB99B /* Submission.m */; };
 		ACD135EF19BA6BC800838FF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135EE19BA6BC800838FF3 /* Foundation.framework */; };
 		ACD135F119BA6BC800838FF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135F019BA6BC800838FF3 /* CoreGraphics.framework */; };
 		ACD135F319BA6BC800838FF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135F219BA6BC800838FF3 /* UIKit.framework */; };
@@ -43,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		777835E825AE4620AF11793D /* Pods-ironswing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ironswing.xcconfig"; path = "Pods/Pods-ironswing.xcconfig"; sourceTree = "<group>"; };
 		81D9E8B519BA7866003EB99B /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
 		81D9E8B619BA7866003EB99B /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
 		81D9E8B819BA79F0003EB99B /* FacebookService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookService.h; sourceTree = "<group>"; };
@@ -53,6 +60,17 @@
 		81D9E8BF19BA8528003EB99B /* CaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
 		81D9E8C119BA8535003EB99B /* QueueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueViewController.h; sourceTree = "<group>"; };
 		81D9E8C219BA8535003EB99B /* QueueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueViewController.m; sourceTree = "<group>"; };
+		81D9E8C419BAB626003EB99B /* DataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
+		81D9E8C519BAB626003EB99B /* DataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
+		81D9E8C719BAB8B9003EB99B /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		81D9E8C819BAB8B9003EB99B /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		81D9E8CD19BAB9AE003EB99B /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		81D9E8CE19BAB9AE003EB99B /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		81D9E8D019BAC920003EB99B /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
+		81D9E8D119BAC920003EB99B /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
+		81D9E8D319BB53E5003EB99B /* Submission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Submission.h; sourceTree = "<group>"; };
+		81D9E8D419BB53E5003EB99B /* Submission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Submission.m; sourceTree = "<group>"; };
+		A2E8FC366218440187075986 /* libPods-ironswing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ironswing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD135EB19BA6BC800838FF3 /* ironswing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ironswing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD135EE19BA6BC800838FF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ACD135F019BA6BC800838FF3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,6 +107,7 @@
 				ACD1362A19BA9CA500838FF3 /* FacebookSDK.framework in Frameworks */,
 				ACD135F319BA6BC800838FF3 /* UIKit.framework in Frameworks */,
 				ACD135EF19BA6BC800838FF3 /* Foundation.framework in Frameworks */,
+				64BC48D0551B46F29C3A4F6D /* libPods-ironswing.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +124,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81D9E8D619BB5435003EB99B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81D9E8D019BAC920003EB99B /* DataStore.h */,
+				81D9E8D119BAC920003EB99B /* DataStore.m */,
+				81D9E8D319BB53E5003EB99B /* Submission.h */,
+				81D9E8D419BB53E5003EB99B /* Submission.m */,
+				81D9E8BB19BA7AA1003EB99B /* User.h */,
+				81D9E8BC19BA7AA1003EB99B /* User.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		ACD135E219BA6BC800838FF3 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +144,7 @@
 				ACD1361619BA6BC800838FF3 /* ironswingTests */,
 				ACD135ED19BA6BC800838FF3 /* Frameworks */,
 				ACD135EC19BA6BC800838FF3 /* Products */,
+				777835E825AE4620AF11793D /* Pods-ironswing.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +165,7 @@
 				ACD135F019BA6BC800838FF3 /* CoreGraphics.framework */,
 				ACD135F219BA6BC800838FF3 /* UIKit.framework */,
 				ACD1361019BA6BC800838FF3 /* XCTest.framework */,
+				A2E8FC366218440187075986 /* libPods-ironswing.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,28 +173,33 @@
 		ACD135F419BA6BC800838FF3 /* ironswing */ = {
 			isa = PBXGroup;
 			children = (
+				81D9E8D619BB5435003EB99B /* Models */,
 				81D9E8BE19BA8528003EB99B /* CaptureViewController.h */,
-				81D9E8B819BA79F0003EB99B /* FacebookService.h */,
-				81D9E8C119BA8535003EB99B /* QueueViewController.h */,
-				ACD135FD19BA6BC800838FF3 /* RAAppDelegate.h */,
-				ACD1360619BA6BC800838FF3 /* RAViewController.h */,
-				81D9E8B519BA7866003EB99B /* SignupViewController.h */,
-				81D9E8BB19BA7AA1003EB99B /* User.h */,
-				ACD1362619BA866A00838FF3 /* RAPlayerQueueCell.h */,
 				81D9E8BF19BA8528003EB99B /* CaptureViewController.m */,
+				81D9E8B819BA79F0003EB99B /* FacebookService.h */,
 				81D9E8B919BA79F0003EB99B /* FacebookService.m */,
-				81D9E8C219BA8535003EB99B /* QueueViewController.m */,
-				ACD135FE19BA6BC800838FF3 /* RAAppDelegate.m */,
-				ACD1360719BA6BC800838FF3 /* RAViewController.m */,
-				81D9E8B619BA7866003EB99B /* SignupViewController.m */,
-				81D9E8BC19BA7AA1003EB99B /* User.m */,
-				ACD1362719BA866A00838FF3 /* RAPlayerQueueCell.m */,
-				ACD1360919BA6BC800838FF3 /* Images.xcassets */,
 				ACD1360319BA6BC800838FF3 /* Main_iPad.storyboard */,
 				ACD1360019BA6BC800838FF3 /* Main_iPhone.storyboard */,
+				81D9E8C119BA8535003EB99B /* QueueViewController.h */,
+				81D9E8C219BA8535003EB99B /* QueueViewController.m */,
+				ACD135FD19BA6BC800838FF3 /* RAAppDelegate.h */,
+				ACD135FE19BA6BC800838FF3 /* RAAppDelegate.m */,
+				ACD1362619BA866A00838FF3 /* RAPlayerQueueCell.h */,
+				ACD1362719BA866A00838FF3 /* RAPlayerQueueCell.m */,
+				ACD1360619BA6BC800838FF3 /* RAViewController.h */,
+				ACD1360719BA6BC800838FF3 /* RAViewController.m */,
+				81D9E8B519BA7866003EB99B /* SignupViewController.h */,
+				81D9E8B619BA7866003EB99B /* SignupViewController.m */,
+				ACD1360919BA6BC800838FF3 /* Images.xcassets */,
 				ACD1362E19BABB0A00838FF3 /* PageViewController.h */,
 				ACD1362F19BABB0A00838FF3 /* PageViewController.m */,
 				ACD135F519BA6BC800838FF3 /* Supporting Files */,
+				81D9E8C419BAB626003EB99B /* DataService.h */,
+				81D9E8C519BAB626003EB99B /* DataService.m */,
+				81D9E8C719BAB8B9003EB99B /* Settings.h */,
+				81D9E8C819BAB8B9003EB99B /* Settings.m */,
+				81D9E8CD19BAB9AE003EB99B /* Utils.h */,
+				81D9E8CE19BAB9AE003EB99B /* Utils.m */,
 			);
 			path = ironswing;
 			sourceTree = "<group>";
@@ -201,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACD1362019BA6BC800838FF3 /* Build configuration list for PBXNativeTarget "ironswing" */;
 			buildPhases = (
+				3D087A1B629B446B8DC05DCC /* Check Pods Manifest.lock */,
 				ACD135E719BA6BC800838FF3 /* Sources */,
 				ACD135E819BA6BC800838FF3 /* Frameworks */,
 				ACD135E919BA6BC800838FF3 /* Resources */,
+				11D047FC1C2C4E26A26B6548 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,19 +330,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11D047FC1C2C4E26A26B6548 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ironswing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D087A1B629B446B8DC05DCC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACD135E719BA6BC800838FF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				ACD135FB19BA6BC800838FF3 /* main.m in Sources */,
+				81D9E8C619BAB626003EB99B /* DataService.m in Sources */,
 				ACD135FF19BA6BC800838FF3 /* RAAppDelegate.m in Sources */,
+				81D9E8CF19BAB9AE003EB99B /* Utils.m in Sources */,
+				81D9E8C919BAB8B9003EB99B /* Settings.m in Sources */,
 				81D9E8BD19BA7AA1003EB99B /* User.m in Sources */,
 				ACD1363019BABB0A00838FF3 /* PageViewController.m in Sources */,
 				81D9E8BA19BA79F0003EB99B /* FacebookService.m in Sources */,
+				81D9E8D219BAC920003EB99B /* DataStore.m in Sources */,
 				81D9E8C319BA8535003EB99B /* QueueViewController.m in Sources */,
 				ACD1362819BA866A00838FF3 /* RAPlayerQueueCell.m in Sources */,
 				ACD1360819BA6BC800838FF3 /* RAViewController.m in Sources */,
+				81D9E8D519BB53E5003EB99B /* Submission.m in Sources */,
 				81D9E8B719BA7866003EB99B /* SignupViewController.m in Sources */,
 				81D9E8C019BA8528003EB99B /* CaptureViewController.m in Sources */,
 			);
@@ -435,6 +514,7 @@
 		};
 		ACD1362119BA6BC800838FF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 777835E825AE4620AF11793D /* Pods-ironswing.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -454,6 +534,7 @@
 		};
 		ACD1362219BA6BC800838FF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 777835E825AE4620AF11793D /* Pods-ironswing.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

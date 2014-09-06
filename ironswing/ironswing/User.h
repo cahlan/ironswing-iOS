@@ -14,6 +14,4 @@
 @property (weak, nonatomic) NSString *email;
 @property (weak, nonatomic) NSString *type;
 
-+ (User *)instance;
-
 @end
