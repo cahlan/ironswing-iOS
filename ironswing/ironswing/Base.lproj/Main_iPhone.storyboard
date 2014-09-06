@@ -73,7 +73,7 @@
             </objects>
             <point key="canvasLocation" x="-200" y="-116"/>
         </scene>
-        <!--Capture View Controller-->
+        <!--Capture View Controller - My Captures-->
         <scene sceneID="SVD-cY-jl7">
             <objects>
                 <viewController id="kHh-2P-bUW" customClass="CaptureViewController" sceneMemberID="viewController">
@@ -84,9 +84,41 @@
                     <view key="view" contentMode="scaleToFill" id="OXd-Y8-s13">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="golfball.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="6eI-nr-XQu">
+                                <rect key="frame" x="0.0" y="64" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView appearanceType="aqua" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="golfball.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Jzr-9C-Ee2">
+                                <rect key="frame" x="160" y="64" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <label appearanceType="aqua" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Capture a new video" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dga-aV-nHH">
+                                <rect key="frame" x="81" y="343" width="159" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKc-Ol-x81">
+                                <rect key="frame" x="135" y="407" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordButtonTapped:" destination="kHh-2P-bUW" eventType="touchUpInside" id="Uoz-EG-ek9"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="DKs-6p-hZN"/>
+                    <navigationItem key="navigationItem" title="My Captures" id="DKs-6p-hZN"/>
+                    <connections>
+                        <outlet property="frontView" destination="Jzr-9C-Ee2" id="orT-nd-Upy"/>
+                        <outlet property="profileView" destination="6eI-nr-XQu" id="rWh-08-cHl"/>
+                        <outlet property="recordButton" destination="VKc-Ol-x81" id="e1H-zA-WWR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nst-o1-STs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,6 +321,9 @@
             <point key="canvasLocation" x="-686" y="-125"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="golfball.jpeg" width="225" height="225"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

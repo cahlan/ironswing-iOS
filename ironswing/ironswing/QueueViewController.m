@@ -42,7 +42,7 @@
     NSMutableDictionary *dict = [@{} mutableCopy];
     
     if ([self.ds.currentUser.type isEqualToString:@"player"]){
-        [dict setValue:self.ds.currentUser.uid forKey:@"id"];
+        [dict setValue:self.ds.currentUser._id forKey:@"uid"];
         path = @"my_submisions";
     }
     

@@ -39,6 +39,8 @@
 		ACD1363019BABB0A00838FF3 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD1362F19BABB0A00838FF3 /* PageViewController.m */; };
 		ACD1363419BB6A3600838FF3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD1363319BB6A3600838FF3 /* FacebookSDK.framework */; };
 		ACD1363719BB6BB000838FF3 /* sweet-golf-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = ACD1363619BB6BB000838FF3 /* sweet-golf-bg.png */; };
+		ACEF08F319BB843800494846 /* golfball.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = ACEF08F219BB843800494846 /* golfball.jpeg */; };
+		ACEF08F519BB87A300494846 /* record-button.png in Resources */ = {isa = PBXBuildFile; fileRef = ACEF08F419BB87A300494846 /* record-button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		ACD1362F19BABB0A00838FF3 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
 		ACD1363319BB6A3600838FF3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		ACD1363619BB6BB000838FF3 /* sweet-golf-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sweet-golf-bg.png"; sourceTree = "<group>"; };
+		ACEF08F219BB843800494846 /* golfball.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = golfball.jpeg; sourceTree = "<group>"; };
+		ACEF08F419BB87A300494846 /* record-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "record-button.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				81D9E8D719BB69FA003EB99B /* ImageIO.framework */,
-				ACD1362919BA9CA500838FF3 /* FacebookSDK.framework */,
 				ACD135EE19BA6BC800838FF3 /* Foundation.framework */,
 				ACD135F019BA6BC800838FF3 /* CoreGraphics.framework */,
 				ACD135F219BA6BC800838FF3 /* UIKit.framework */,
@@ -224,6 +227,8 @@
 		ACD135F519BA6BC800838FF3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ACEF08F419BB87A300494846 /* record-button.png */,
+				ACEF08F219BB843800494846 /* golfball.jpeg */,
 				ACD1363619BB6BB000838FF3 /* sweet-golf-bg.png */,
 				ACD135F619BA6BC800838FF3 /* ironswing-Info.plist */,
 				ACD135F719BA6BC800838FF3 /* InfoPlist.strings */,
@@ -333,7 +338,9 @@
 			files = (
 				ACD1363719BB6BB000838FF3 /* sweet-golf-bg.png in Resources */,
 				ACD1360519BA6BC800838FF3 /* Main_iPad.storyboard in Resources */,
+				ACEF08F319BB843800494846 /* golfball.jpeg in Resources */,
 				ACD1360A19BA6BC800838FF3 /* Images.xcassets in Resources */,
+				ACEF08F519BB87A300494846 /* record-button.png in Resources */,
 				ACD1360219BA6BC800838FF3 /* Main_iPhone.storyboard in Resources */,
 				81D9E8DC19BB6B93003EB99B /* placeholder.png in Resources */,
 				ACD135F919BA6BC800838FF3 /* InfoPlist.strings in Resources */,

@@ -31,10 +31,6 @@
     UIGraphicsEndImageContext();
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
-    
-    self.playerButton.backgroundColor = [UIColor blueColor];
-    
-    self.proButton.backgroundColor = [UIColor blueColor];
 
 }
 
