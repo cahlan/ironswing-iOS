@@ -38,6 +38,14 @@
     
     self.ds = [DataStore sharedInstance];
     
+    NSString *path = @"submission";
+    NSMutableDictionary *dict = [@{} mutableCopy];
+    
+    if ([self.ds.currentUser.type isEqualToString:@"player"]){
+        [dict setValue:self.ds.currentUser.uid forKey:@"id"];
+        path = @"my_submisions";
+    }
+    
     self.tableView.dataSource = self;
     
     //get data
@@ -48,10 +56,10 @@
     void (^failure)(NSURLSessionDataTask *task, NSError *error) = ^void(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"Error! %@", error);
     };
-    NSMutableDictionary *dict = [@{} mutableCopy];
+    
     //my_submissions
     //?uid=
-    [[DataService sharedInstance] getSubmissionsFromPath:@"submission" withParams:dict callback:success failure:failure];
+    [[DataService sharedInstance] getSubmissionsFromPath:path withParams:dict callback:success failure:failure];
 }
 
 - (void)didReceiveMemoryWarning
