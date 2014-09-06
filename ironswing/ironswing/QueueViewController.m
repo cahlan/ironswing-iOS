@@ -11,6 +11,7 @@
 #import "QueueViewController.h"
 #import "DataService.h"
 #import "DataStore.h"
+#import "Utils.h"
 
 @interface QueueViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -62,7 +63,7 @@
     
     RAPlayerQueueCell *submissionCell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     Submission *sub = [self.ds.submissions objectAtIndex:indexPath.row];
-    submissionCell.cellDate.text = sub.createdAt;
+    submissionCell.cellDate.text = [Utils formatDate:sub.createdAt format:@"M/dd"];
     return submissionCell;
 }
 

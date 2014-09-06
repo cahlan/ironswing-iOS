@@ -12,13 +12,13 @@
 
 + (User *)userFromObject: (NSDictionary *)obj;
 
-@property (weak, nonatomic) NSString *uid;
-@property (weak, nonatomic) NSString *fb_id;
-@property (weak, nonatomic) NSString *email;
-@property (weak, nonatomic) NSString *firstname;
-@property (weak, nonatomic) NSString *lastname;
-@property (weak, nonatomic) NSDate *createdAt;
-@property (weak, nonatomic) NSDate *updatedAt;
-@property (weak, nonatomic) NSString *type;
+@property (strong, nonatomic) NSString *uid;
+@property (strong, nonatomic) NSString *fb_id;
+@property (strong, nonatomic) NSString *email;
+@property (strong, nonatomic) NSString *firstname;
+@property (strong, nonatomic) NSString *lastname;
+@property (strong, nonatomic) NSDate *createdAt;
+@property (strong, nonatomic) NSDate *updatedAt;
+@property (strong, nonatomic) NSString *type;
 
 @end
