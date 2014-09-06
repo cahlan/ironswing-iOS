@@ -28,7 +28,6 @@
     NSMutableArray *subs = [[NSMutableArray alloc] initWithCapacity:[objects count]];
     for (int i = 0; i<[objects count]; i++) {
         NSDictionary *obj = [objects objectAtIndex:i];
-        NSLog(@"adding objecT");
         [subs addObject:[Submission submissionFromObject:obj]];
     }
     self.submissions = [subs copy];

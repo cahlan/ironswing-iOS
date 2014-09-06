@@ -7,13 +7,19 @@
 //
 
 #import "User.h"
+#import "Utils.h"
 
 @implementation User
 
 + (User *)userFromObject: (NSDictionary *)obj
 {
-    NSLog(@"user %@", obj);
     User *user = [[User alloc] init];
+    user.email = [obj objectForKey:@"email"];
+    user.createdAt = [Utils dateFromTimestamp:[obj objectForKey:@"createdAt"]];
+    user.updatedAt = [Utils dateFromTimestamp:[obj objectForKey:@"updatedAt"]];
+    user.firstname = [obj objectForKey:@"firstname"];
+    user.lastname = [obj objectForKey:@"lastname"];
+    user.uid = [obj objectForKey:@"uid"];
     return user;
 }
 
