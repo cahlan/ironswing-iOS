@@ -8,6 +8,7 @@
 
 #import "SignupViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
+#import "DataService.h"
 #import "DataStore.h"
 
 @interface SignupViewController ()
@@ -54,6 +55,16 @@
     self.ds.currentUser.fb_id = user.objectID;
     
     self.profilePicture.profileID = self.ds.currentUser.fb_id;
+    
+    void (^success)(NSURLSessionDataTask *task, id responseObject) = ^void(NSURLSessionDataTask *task, id responseObject) {
+        NSArray *results = (NSArray *)responseObject;
+        self.ds.currentUser = [User userFromObject:[results objectAtIndex:0]];
+    };
+    void (^failure)(NSURLSessionDataTask *task, NSError *error) = ^void(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"Error! %@", error);
+    };
+    
+    [[DataService sharedInstance] getCurrentUserDataFromFacebookId:self.ds.currentUser.fb_id callback:success failure:failure];
 }
 
 @end

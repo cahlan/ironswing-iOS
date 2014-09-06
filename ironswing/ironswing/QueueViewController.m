@@ -39,11 +39,11 @@
     self.ds = [DataStore sharedInstance];
     
     NSString *path = @"submission";
-    NSMutableDictionary *dict = [@{} mutableCopy];
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     
-    if ([self.ds.currentUser.type isEqualToString:@"player"]){
-        [dict setValue:self.ds.currentUser.uid forKey:@"id"];
-        path = @"my_submisions";
+    if (!self.ds.isPro){
+        [dict setValue:self.ds.currentUser._id forKey:@"id"];
+        path = @"my_submissions";
     }
     
     self.tableView.dataSource = self;

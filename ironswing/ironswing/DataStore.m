@@ -19,6 +19,7 @@
     dispatch_once(&oncePredicate, ^{
         _sharedInstance = [[DataStore alloc] init];
         _sharedInstance.currentUser = [[User alloc] init];
+        _sharedInstance.userCache = [[NSMutableDictionary alloc] init];
     });
     return _sharedInstance;
 }

@@ -7,6 +7,7 @@
 //
 
 #import "Submission.h"
+#import "DataStore.h"
 #import "User.h"
 #import "Utils.h"
 
@@ -19,7 +20,17 @@
     sub.createdAt = [Utils dateFromTimestamp:[obj valueForKey:@"createdAt"]];
     sub.updatedAt = [Utils dateFromTimestamp:[obj valueForKey:@"updatedAt"]];
     if ([obj valueForKey:@"user"]) {
-        sub.user = [User userFromObject:[obj valueForKey:@"user"]];
+        id user = [obj valueForKey:@"user"];
+        if ([user isKindOfClass:[NSDictionary class]]) {
+            sub.user = [User userFromObject:[obj valueForKey:@"user"]];
+        }
+        else {
+            //if it's in the cache, use it
+            User *cachedUser = [[DataStore sharedInstance].userCache objectForKey:user];
+            if (cachedUser) {
+                sub.user = cachedUser;
+            }
+        }
     }
     return sub;
 }
