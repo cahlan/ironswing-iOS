@@ -11,6 +11,7 @@
 #import "QueueViewController.h"
 #import "DataService.h"
 #import "DataStore.h"
+#import "Utils.h"
 
 @interface QueueViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -40,8 +41,7 @@
     
     //get data
     void (^success)(NSURLSessionDataTask *task, id responseObject) = ^void(NSURLSessionDataTask *task, id responseObject) {
-        self.ds.submissions = (NSArray *)responseObject;
-        self.ds.submissions = [[NSMutableArray alloc] initWithArray:[(NSArray *)responseObject mutableCopy]];
+        [self.ds setSubmissionsFromArrayOfObjects:responseObject];
         [self.tableView reloadData];
     };
     void (^failure)(NSURLSessionDataTask *task, NSError *error) = ^void(NSURLSessionDataTask *task, NSError *error) {
@@ -62,12 +62,12 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     RAPlayerQueueCell *submissionCell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    
+    Submission *sub = [self.ds.submissions objectAtIndex:indexPath.row];
+    submissionCell.cellDate.text = [Utils formatDate:sub.createdAt format:@"M/dd"];
     return submissionCell;
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    NSLog(@"%@", self.ds.submissions);
     return [self.ds.submissions count];
 }
 

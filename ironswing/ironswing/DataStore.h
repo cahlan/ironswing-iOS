@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Submission.h"
 #import "User.h"
 
 @interface DataStore : NSObject
@@ -14,5 +15,7 @@
 + (DataStore *)sharedInstance;
 @property (strong, nonatomic) NSArray *submissions;
 @property (strong, nonatomic) User *currentUser;
+
+- (void)setSubmissionsFromArrayOfObjects: (NSArray *)objects;
 
 @end

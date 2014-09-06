@@ -54,9 +54,6 @@
     self.ds.currentUser.fb_id = user.objectID;
     
     self.profilePicture.profileID = self.ds.currentUser.fb_id;
-    NSLog(@"profile pic %@", self.profilePicture.profileID);
-    
-    //go to next screen
 }
 
 @end
