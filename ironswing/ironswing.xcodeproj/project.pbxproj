@@ -29,6 +29,7 @@
 		ACD1361D19BA6BC800838FF3 /* ironswingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD1361C19BA6BC800838FF3 /* ironswingTests.m */; };
 		ACD1362819BA866A00838FF3 /* RAPlayerQueueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD1362719BA866A00838FF3 /* RAPlayerQueueCell.m */; };
 		ACD1362A19BA9CA500838FF3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD1362919BA9CA500838FF3 /* FacebookSDK.framework */; };
+		ACD1363019BABB0A00838FF3 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD1362F19BABB0A00838FF3 /* PageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		ACD1362619BA866A00838FF3 /* RAPlayerQueueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAPlayerQueueCell.h; sourceTree = "<group>"; };
 		ACD1362719BA866A00838FF3 /* RAPlayerQueueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAPlayerQueueCell.m; sourceTree = "<group>"; };
 		ACD1362919BA9CA500838FF3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		ACD1362E19BABB0A00838FF3 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		ACD1362F19BABB0A00838FF3 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +158,8 @@
 				ACD1360919BA6BC800838FF3 /* Images.xcassets */,
 				ACD1360319BA6BC800838FF3 /* Main_iPad.storyboard */,
 				ACD1360019BA6BC800838FF3 /* Main_iPhone.storyboard */,
+				ACD1362E19BABB0A00838FF3 /* PageViewController.h */,
+				ACD1362F19BABB0A00838FF3 /* PageViewController.m */,
 				ACD135F519BA6BC800838FF3 /* Supporting Files */,
 			);
 			path = ironswing;
@@ -292,6 +297,7 @@
 				ACD135FB19BA6BC800838FF3 /* main.m in Sources */,
 				ACD135FF19BA6BC800838FF3 /* RAAppDelegate.m in Sources */,
 				81D9E8BD19BA7AA1003EB99B /* User.m in Sources */,
+				ACD1363019BABB0A00838FF3 /* PageViewController.m in Sources */,
 				81D9E8BA19BA79F0003EB99B /* FacebookService.m in Sources */,
 				81D9E8C319BA8535003EB99B /* QueueViewController.m in Sources */,
 				ACD1362819BA866A00838FF3 /* RAPlayerQueueCell.m in Sources */,
