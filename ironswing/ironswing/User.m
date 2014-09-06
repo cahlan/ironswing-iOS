@@ -19,7 +19,8 @@
     user.updatedAt = [Utils dateFromTimestamp:[obj objectForKey:@"updatedAt"]];
     user.firstname = [obj objectForKey:@"firstname"];
     user.lastname = [obj objectForKey:@"lastname"];
-    user.uid = [obj objectForKey:@"uid"];
+    user.fb_id = [obj objectForKey:@"uid"];
+    user._id =[obj objectForKey:@"id"];
     return user;
 }
 

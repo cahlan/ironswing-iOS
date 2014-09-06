@@ -66,7 +66,7 @@
     RAPlayerQueueCell *submissionCell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     Submission *sub = [self.ds.submissions objectAtIndex:indexPath.row];
     submissionCell.cellDate.text = [Utils formatDate:sub.createdAt format:@"M/dd"];
-    submissionCell.avatarImage.profileID = sub.user.uid;
+    submissionCell.avatarImage.profileID = sub.user.fb_id;
     [submissionCell.image1 sd_setImageWithURL:[NSURL URLWithString:@"http://img.ehowcdn.com/other-people/viper/media/e1635fa1-96fb-4251-ace9-4dcb9393c8f2/jpeg/d0e5284b-bd4d-4242-adc4-b006cee8b008_0.jpg"] placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
     [submissionCell.image2 sd_setImageWithURL:[NSURL URLWithString:@"http://img.ehowcdn.com/other-people/viper/media/e1635fa1-96fb-4251-ace9-4dcb9393c8f2/jpeg/d0e5284b-bd4d-4242-adc4-b006cee8b008_0.jpg"] placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
     return submissionCell;
