@@ -12,7 +12,7 @@
 
 + (User *)userFromObject: (NSDictionary *)obj;
 
-@property (strong, nonatomic) NSString *uid;
+@property (strong, nonatomic) NSString *_id;
 @property (strong, nonatomic) NSString *fb_id;
 @property (strong, nonatomic) NSString *email;
 @property (strong, nonatomic) NSString *firstname;
