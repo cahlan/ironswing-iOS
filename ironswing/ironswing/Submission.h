@@ -11,8 +11,10 @@
 
 @interface Submission : NSObject
 
-@property (weak, nonatomic) NSString *createdAt;
-@property (weak, nonatomic) NSString *updatedAt;
-@property (weak, nonatomic) User *user;
++ (Submission *)submissionFromObject: (NSDictionary *)obj;
+
+@property (strong, nonatomic) NSDate *createdAt;
+@property (strong, nonatomic) NSDate *updatedAt;
+@property (strong, nonatomic) User *user;
 
 @end

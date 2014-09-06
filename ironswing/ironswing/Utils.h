@@ -11,6 +11,8 @@
 @interface Utils : NSObject
 
 + (Utils *)sharedInstance;
++ (NSString *)formatDate:(NSDate *)date format:(NSString *)format;
++ (NSDate *)dateFromTimestamp:(NSString *)timestamp;
 - (NSString *)constructUrlFromPath:(NSString *)path;
 
 @end

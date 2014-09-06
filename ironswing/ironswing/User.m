@@ -10,4 +10,11 @@
 
 @implementation User
 
++ (User *)userFromObject: (NSDictionary *)obj
+{
+    NSLog(@"user %@", obj);
+    User *user = [[User alloc] init];
+    return user;
+}
+
 @end

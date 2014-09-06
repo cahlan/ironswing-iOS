@@ -25,6 +25,27 @@
     return _sharedInstance;
 }
 
++ (NSString *)formatDate:(NSDate *)date format:(NSString *)format
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
+    [dateFormatter setDateFormat:format];
+    return [dateFormatter stringFromDate:date];
+}
+
++ (NSDate *)dateFromTimestamp:(NSString *)timestamp
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSZ"];
+    NSDate *date = nil;
+    NSError *error = nil;
+    if(![dateFormatter getObjectValue:&date forString:timestamp range:nil error:&error]) {
+        return nil;
+    }
+    return date;
+}
+
 - (id)init
 {
     self = [super init];
