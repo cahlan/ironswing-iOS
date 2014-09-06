@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Ryan Allred. All rights reserved.
 //
 
+
 #import "RAViewController.h"
 #import "User.h"
 
@@ -35,5 +36,6 @@
     self.appUser.type = @"pro";
 
 }
+
 
 @end

@@ -32,11 +32,11 @@
 {
     [super viewDidLoad];
     self.loginButton.delegate = self;
-    /*
-    FBLoginView *loginView = [[FBLoginView alloc] init];
-    loginView.center = self.view.center;
-    [self.view addSubview:loginView];
-     */
+    
+//    FBLoginView *loginView = [[FBLoginView alloc] init];
+//    loginView.center = self.view.center;
+//    [self.view addSubview:loginView];
+    
 }
 
 - (void)didReceiveMemoryWarning

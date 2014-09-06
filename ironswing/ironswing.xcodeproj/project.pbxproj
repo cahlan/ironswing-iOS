@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81D9E8B419BA7781003EB99B /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D9E8B319BA7781003EB99B /* FacebookSDK.framework */; };
 		81D9E8B719BA7866003EB99B /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8B619BA7866003EB99B /* SignupViewController.m */; };
 		81D9E8BA19BA79F0003EB99B /* FacebookService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8B919BA79F0003EB99B /* FacebookService.m */; };
 		81D9E8BD19BA7AA1003EB99B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8BC19BA7AA1003EB99B /* User.m */; };
@@ -28,6 +27,8 @@
 		ACD1361319BA6BC800838FF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135F219BA6BC800838FF3 /* UIKit.framework */; };
 		ACD1361B19BA6BC800838FF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACD1361919BA6BC800838FF3 /* InfoPlist.strings */; };
 		ACD1361D19BA6BC800838FF3 /* ironswingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD1361C19BA6BC800838FF3 /* ironswingTests.m */; };
+		ACD1362819BA866A00838FF3 /* RAPlayerQueueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD1362719BA866A00838FF3 /* RAPlayerQueueCell.m */; };
+		ACD1362A19BA9CA500838FF3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD1362919BA9CA500838FF3 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		81D9E8B319BA7781003EB99B /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		81D9E8B519BA7866003EB99B /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
 		81D9E8B619BA7866003EB99B /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
 		81D9E8B819BA79F0003EB99B /* FacebookService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookService.h; sourceTree = "<group>"; };
@@ -72,6 +72,9 @@
 		ACD1361819BA6BC800838FF3 /* ironswingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ironswingTests-Info.plist"; sourceTree = "<group>"; };
 		ACD1361A19BA6BC800838FF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ACD1361C19BA6BC800838FF3 /* ironswingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ironswingTests.m; sourceTree = "<group>"; };
+		ACD1362619BA866A00838FF3 /* RAPlayerQueueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAPlayerQueueCell.h; sourceTree = "<group>"; };
+		ACD1362719BA866A00838FF3 /* RAPlayerQueueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAPlayerQueueCell.m; sourceTree = "<group>"; };
+		ACD1362919BA9CA500838FF3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACD135F119BA6BC800838FF3 /* CoreGraphics.framework in Frameworks */,
-				81D9E8B419BA7781003EB99B /* FacebookSDK.framework in Frameworks */,
+				ACD1362A19BA9CA500838FF3 /* FacebookSDK.framework in Frameworks */,
 				ACD135F319BA6BC800838FF3 /* UIKit.framework in Frameworks */,
 				ACD135EF19BA6BC800838FF3 /* Foundation.framework in Frameworks */,
 			);
@@ -121,7 +124,7 @@
 		ACD135ED19BA6BC800838FF3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				81D9E8B319BA7781003EB99B /* FacebookSDK.framework */,
+				ACD1362919BA9CA500838FF3 /* FacebookSDK.framework */,
 				ACD135EE19BA6BC800838FF3 /* Foundation.framework */,
 				ACD135F019BA6BC800838FF3 /* CoreGraphics.framework */,
 				ACD135F219BA6BC800838FF3 /* UIKit.framework */,
@@ -140,6 +143,7 @@
 				ACD1360619BA6BC800838FF3 /* RAViewController.h */,
 				81D9E8B519BA7866003EB99B /* SignupViewController.h */,
 				81D9E8BB19BA7AA1003EB99B /* User.h */,
+				ACD1362619BA866A00838FF3 /* RAPlayerQueueCell.h */,
 				81D9E8BF19BA8528003EB99B /* CaptureViewController.m */,
 				81D9E8B919BA79F0003EB99B /* FacebookService.m */,
 				81D9E8C219BA8535003EB99B /* QueueViewController.m */,
@@ -147,6 +151,7 @@
 				ACD1360719BA6BC800838FF3 /* RAViewController.m */,
 				81D9E8B619BA7866003EB99B /* SignupViewController.m */,
 				81D9E8BC19BA7AA1003EB99B /* User.m */,
+				ACD1362719BA866A00838FF3 /* RAPlayerQueueCell.m */,
 				ACD1360919BA6BC800838FF3 /* Images.xcassets */,
 				ACD1360319BA6BC800838FF3 /* Main_iPad.storyboard */,
 				ACD1360019BA6BC800838FF3 /* Main_iPhone.storyboard */,
@@ -289,6 +294,7 @@
 				81D9E8BD19BA7AA1003EB99B /* User.m in Sources */,
 				81D9E8BA19BA79F0003EB99B /* FacebookService.m in Sources */,
 				81D9E8C319BA8535003EB99B /* QueueViewController.m in Sources */,
+				ACD1362819BA866A00838FF3 /* RAPlayerQueueCell.m in Sources */,
 				ACD1360819BA6BC800838FF3 /* RAViewController.m in Sources */,
 				81D9E8B719BA7866003EB99B /* SignupViewController.m in Sources */,
 				81D9E8C019BA8528003EB99B /* CaptureViewController.m in Sources */,

@@ -6,9 +6,12 @@
 //  Copyright (c) 2014 Ryan Allred. All rights reserved.
 //
 
+#import "RAPlayerQueueCell.h"
 #import "QueueViewController.h"
 
-@interface QueueViewController ()
+@interface QueueViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -26,7 +29,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.tableView.dataSource = self;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,6 +39,19 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    RAPlayerQueueCell *submissionCell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    return submissionCell;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 5;
+}
+
 
 /*
 #pragma mark - Navigation
