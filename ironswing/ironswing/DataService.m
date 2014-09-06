@@ -41,11 +41,11 @@
     return api;
 }
 
-- (void)getSubmissionsWithParams: (NSMutableDictionary *)params callback:(void (^)(NSURLSessionDataTask *task, id responseObject))callback failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
+- (void)getSubmissionsFromPath:(NSString *)path withParams: (NSMutableDictionary *)params callback:(void (^)(NSURLSessionDataTask *task, id responseObject))callback failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
     //always pass user id
     //[params setValue:self.ds.currentUser.fb_id forKey:@"uid"];
-    [[DataService api] GET:@"submission" parameters:params success:callback failure:nil];
+    [[DataService api] GET:path parameters:params success:callback failure:nil];
 }
 
 @end

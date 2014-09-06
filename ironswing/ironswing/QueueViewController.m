@@ -49,8 +49,9 @@
         NSLog(@"Error! %@", error);
     };
     NSMutableDictionary *dict = [@{} mutableCopy];
-    [[DataService sharedInstance] getSubmissionsWithParams:dict callback:success failure:failure];
-    
+    //my_submissions
+    //?uid=
+    [[DataService sharedInstance] getSubmissionsFromPath:@"submission" withParams:dict callback:success failure:failure];
 }
 
 - (void)didReceiveMemoryWarning

@@ -12,6 +12,6 @@
 @interface DataService : NSObject
 
 + (DataService *)sharedInstance;
-- (void)getSubmissionsWithParams: (NSMutableDictionary *)params callback:(void (^)(NSURLSessionDataTask *task, id responseObject))callback failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
+- (void)getSubmissionsFromPath:(NSString *)path withParams: (NSMutableDictionary *)params callback:(void (^)(NSURLSessionDataTask *task, id responseObject))callback failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
 
 @end
