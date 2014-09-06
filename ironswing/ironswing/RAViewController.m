@@ -25,12 +25,17 @@
     
     
     UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"sweet-golf-bg.png"] drawInRect:self.view.bounds];
+    [[UIImage imageNamed:@"sweet-golf-bg.png"] drawInRect:self.view.frame];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     
     UIGraphicsEndImageContext();
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+    
+    self.playerButton.backgroundColor = [UIColor blueColor];
+    
+    self.proButton.backgroundColor = [UIColor blueColor];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,6 +49,11 @@
 - (IBAction)startPro:(id)sender {
     self.ds.currentUser.type = @"pro";
 
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    [super viewWillAppear:animated];
 }
 
 
