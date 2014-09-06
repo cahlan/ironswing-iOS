@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-ironswing-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ironswing.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8D0D353320F4463CA0A6DB5B</key>
+		<key>5C0A17CD2328423CB6C539F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C48C2FB374D54A0984B083D6</key>
+		<key>B791F7E43F11456BB249EDDA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA433B2B18504EDDB16C9FCB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface RAPlayerQueueCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *avatarImage;
+@property (weak, nonatomic) IBOutlet FBProfilePictureView *avatarImage;
 @property (weak, nonatomic) IBOutlet UILabel *cellDate;
 @property (weak, nonatomic) IBOutlet UIImageView *image1;
 @property (weak, nonatomic) IBOutlet UIImageView *image2;
