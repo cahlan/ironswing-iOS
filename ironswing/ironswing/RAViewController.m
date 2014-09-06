@@ -40,10 +40,10 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)startPlayer:(id)sender {
-    self.ds.currentUser.type = @"player";
+    self.ds.isPro = NO;
 }
 - (IBAction)startPro:(id)sender {
-    self.ds.currentUser.type = @"pro";
+    self.ds.isPro = YES;
 
 }
 

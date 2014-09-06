@@ -15,6 +15,8 @@
 + (DataStore *)sharedInstance;
 @property (strong, nonatomic) NSArray *submissions;
 @property (strong, nonatomic) User *currentUser;
+@property (strong, nonatomic) NSMutableDictionary *userCache;
+@property (nonatomic) BOOL isPro;
 
 - (void)setSubmissionsFromArrayOfObjects: (NSArray *)objects;
 

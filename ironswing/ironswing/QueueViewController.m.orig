@@ -41,9 +41,15 @@
     NSString *path = @"submission";
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
     
+<<<<<<< HEAD
+    if ([self.ds.currentUser.type isEqualToString:@"player"]){
+        [dict setValue:self.ds.currentUser._id forKey:@"uid"];
+        path = @"my_submisions";
+=======
     if (!self.ds.isPro){
         [dict setValue:self.ds.currentUser._id forKey:@"id"];
         path = @"my_submissions";
+>>>>>>> b8a8f465285f64b01dfc003232079b587d1941ce
     }
     
     self.tableView.dataSource = self;

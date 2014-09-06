@@ -7,6 +7,7 @@
 //
 
 #import "User.h"
+#import "DataStore.h"
 #import "Utils.h"
 
 @implementation User
@@ -21,6 +22,8 @@
     user.lastname = [obj objectForKey:@"lastname"];
     user.fb_id = [obj objectForKey:@"uid"];
     user._id =[obj objectForKey:@"id"];
+    //store in cache
+    [[DataStore sharedInstance].userCache setObject:user forKey:user._id];
     return user;
 }
 

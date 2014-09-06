@@ -19,6 +19,5 @@
 @property (strong, nonatomic) NSString *lastname;
 @property (strong, nonatomic) NSDate *createdAt;
 @property (strong, nonatomic) NSDate *updatedAt;
-@property (strong, nonatomic) NSString *type;
 
 @end

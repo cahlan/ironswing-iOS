@@ -41,11 +41,18 @@
     return api;
 }
 
+- (void)getCurrentUserDataFromFacebookId:(NSString *)fb_id callback:(void (^)(NSURLSessionDataTask *task, id responseObject))callback failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
+{
+    [[DataService api] GET:@"user" parameters:@{@"uid":fb_id} success:callback failure:failure];
+}
+
 - (void)getSubmissionsFromPath:(NSString *)path withParams: (NSMutableDictionary *)params callback:(void (^)(NSURLSessionDataTask *task, id responseObject))callback failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
     //always pass user id
     //[params setValue:self.ds.currentUser.fb_id forKey:@"uid"];
-    [[DataService api] GET:path parameters:params success:callback failure:nil];
+    //get data
+    
+    [[DataService api] GET:path parameters:params success:callback failure:failure];
 }
 
 @end
