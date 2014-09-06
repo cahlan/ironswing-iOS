@@ -17,6 +17,7 @@
 		81D9E8C919BAB8B9003EB99B /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8C819BAB8B9003EB99B /* Settings.m */; };
 		81D9E8CF19BAB9AE003EB99B /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8CE19BAB9AE003EB99B /* Utils.m */; };
 		81D9E8D219BAC920003EB99B /* DataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8D119BAC920003EB99B /* DataStore.m */; };
+		81D9E8D519BB53E5003EB99B /* Submission.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9E8D419BB53E5003EB99B /* Submission.m */; };
 		ACD135EF19BA6BC800838FF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135EE19BA6BC800838FF3 /* Foundation.framework */; };
 		ACD135F119BA6BC800838FF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135F019BA6BC800838FF3 /* CoreGraphics.framework */; };
 		ACD135F319BA6BC800838FF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD135F219BA6BC800838FF3 /* UIKit.framework */; };
@@ -66,6 +67,8 @@
 		81D9E8CE19BAB9AE003EB99B /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		81D9E8D019BAC920003EB99B /* DataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStore.h; sourceTree = "<group>"; };
 		81D9E8D119BAC920003EB99B /* DataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataStore.m; sourceTree = "<group>"; };
+		81D9E8D319BB53E5003EB99B /* Submission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Submission.h; sourceTree = "<group>"; };
+		81D9E8D419BB53E5003EB99B /* Submission.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Submission.m; sourceTree = "<group>"; };
 		A2E8FC366218440187075986 /* libPods-ironswing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ironswing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD135EB19BA6BC800838FF3 /* ironswing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ironswing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD135EE19BA6BC800838FF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -118,6 +121,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81D9E8D619BB5435003EB99B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81D9E8D019BAC920003EB99B /* DataStore.h */,
+				81D9E8D119BAC920003EB99B /* DataStore.m */,
+				81D9E8D319BB53E5003EB99B /* Submission.h */,
+				81D9E8D419BB53E5003EB99B /* Submission.m */,
+				81D9E8BB19BA7AA1003EB99B /* User.h */,
+				81D9E8BC19BA7AA1003EB99B /* User.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		ACD135E219BA6BC800838FF3 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +170,7 @@
 		ACD135F419BA6BC800838FF3 /* ironswing */ = {
 			isa = PBXGroup;
 			children = (
+				81D9E8D619BB5435003EB99B /* Models */,
 				81D9E8BE19BA8528003EB99B /* CaptureViewController.h */,
 				81D9E8BF19BA8528003EB99B /* CaptureViewController.m */,
 				81D9E8B819BA79F0003EB99B /* FacebookService.h */,
@@ -170,8 +187,6 @@
 				ACD1360719BA6BC800838FF3 /* RAViewController.m */,
 				81D9E8B519BA7866003EB99B /* SignupViewController.h */,
 				81D9E8B619BA7866003EB99B /* SignupViewController.m */,
-				81D9E8BB19BA7AA1003EB99B /* User.h */,
-				81D9E8BC19BA7AA1003EB99B /* User.m */,
 				ACD1360919BA6BC800838FF3 /* Images.xcassets */,
 				ACD135F519BA6BC800838FF3 /* Supporting Files */,
 				81D9E8C419BAB626003EB99B /* DataService.h */,
@@ -180,8 +195,6 @@
 				81D9E8C819BAB8B9003EB99B /* Settings.m */,
 				81D9E8CD19BAB9AE003EB99B /* Utils.h */,
 				81D9E8CE19BAB9AE003EB99B /* Utils.m */,
-				81D9E8D019BAC920003EB99B /* DataStore.h */,
-				81D9E8D119BAC920003EB99B /* DataStore.m */,
 			);
 			path = ironswing;
 			sourceTree = "<group>";
@@ -361,6 +374,7 @@
 				81D9E8C319BA8535003EB99B /* QueueViewController.m in Sources */,
 				ACD1362819BA866A00838FF3 /* RAPlayerQueueCell.m in Sources */,
 				ACD1360819BA6BC800838FF3 /* RAViewController.m in Sources */,
+				81D9E8D519BB53E5003EB99B /* Submission.m in Sources */,
 				81D9E8B719BA7866003EB99B /* SignupViewController.m in Sources */,
 				81D9E8C019BA8528003EB99B /* CaptureViewController.m in Sources */,
 			);

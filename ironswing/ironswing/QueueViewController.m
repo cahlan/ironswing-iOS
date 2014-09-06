@@ -47,7 +47,8 @@
     void (^failure)(NSURLSessionDataTask *task, NSError *error) = ^void(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"Error! %@", error);
     };
-    [[DataService sharedInstance] getSubmissions:success failure:failure];
+    NSMutableDictionary *dict = [@{} mutableCopy];
+    [[DataService sharedInstance] getSubmissionsWithParams:dict callback:success failure:failure];
     
 }
 

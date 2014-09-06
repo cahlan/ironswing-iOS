@@ -16,6 +16,7 @@
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
         _sharedInstance = [[DataStore alloc] init];
+        _sharedInstance.currentUser = [[User alloc] init];
     });
     return _sharedInstance;
 }

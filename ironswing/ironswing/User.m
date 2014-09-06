@@ -10,14 +10,4 @@
 
 @implementation User
 
-+ (User *)sharedInstance
-{
-    static User *_sharedInstance = nil;
-    static dispatch_once_t oncePredicate;
-    dispatch_once(&oncePredicate, ^{
-        _sharedInstance = [[User alloc] init];
-    });
-    return _sharedInstance;
-}
-
 @end

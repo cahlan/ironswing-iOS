@@ -10,8 +10,6 @@
 
 @interface User : NSObject
 
-+ (User *)sharedInstance;
-
 @property (weak, nonatomic) NSString *fb_id;
 @property (weak, nonatomic) NSString *email;
 @property (weak, nonatomic) NSString *type;

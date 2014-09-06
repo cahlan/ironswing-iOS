@@ -8,12 +8,14 @@
 
 #import "SignupViewController.h"
 #import <FacebookSDK/FacebookSDK.h>
-#import "User.h"
+#import "DataStore.h"
 
 @interface SignupViewController ()
 
 @property (weak, nonatomic) IBOutlet FBLoginView *loginButton;
 @property (weak, nonatomic) IBOutlet FBProfilePictureView *profilePicture;
+
+@property (weak, nonatomic) DataStore *ds;
 
 @end
 
@@ -23,7 +25,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        //
     }
     return self;
 }
@@ -32,6 +34,8 @@
 {
     [super viewDidLoad];
     self.loginButton.delegate = self;
+    
+    self.ds = [DataStore sharedInstance];
     
 //    FBLoginView *loginView = [[FBLoginView alloc] init];
 //    loginView.center = self.view.center;
@@ -47,10 +51,10 @@
 
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user {
     
-    User *_user = [User sharedInstance];
-    _user.fb_id = user.objectID;
+    self.ds.currentUser.fb_id = user.objectID;
     
-    self.profilePicture.profileID = _user.fb_id;
+    self.profilePicture.profileID = self.ds.currentUser.fb_id;
+    NSLog(@"profile pic %@", self.profilePicture.profileID);
     
     //go to next screen
 }

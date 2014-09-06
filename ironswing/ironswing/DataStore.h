@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "User.h"
 
 @interface DataStore : NSObject
 
 + (DataStore *)sharedInstance;
 @property (strong, nonatomic) NSArray *submissions;
-@property (strong, nonatomic) NSArray *arr;
-@property (strong, nonatomic) NSString *something;
+@property (strong, nonatomic) User *currentUser;
 
 @end

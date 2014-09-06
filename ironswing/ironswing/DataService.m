@@ -12,6 +12,12 @@
 #import "User.h"
 #import "DataStore.h"
 
+@interface DataService()
+
+@property (weak, nonatomic) DataStore *ds;
+
+@end
+
 @implementation DataService
 
 + (DataService *)sharedInstance
@@ -20,6 +26,7 @@
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
         _sharedInstance = [[DataService alloc] init];
+        _sharedInstance.ds = [DataStore sharedInstance];
     });
     return _sharedInstance;
 }
@@ -34,10 +41,10 @@
     return api;
 }
 
-- (void)getSubmissions:(void (^)(NSURLSessionDataTask *task, id responseObject))callback failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
+- (void)getSubmissionsWithParams: (NSMutableDictionary *)params callback:(void (^)(NSURLSessionDataTask *task, id responseObject))callback failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure
 {
-    User *user = [User sharedInstance];
-    NSDictionary *params = @{@"uid": user.fb_id};
+    //always pass user id
+    [params setValue:self.ds.currentUser.fb_id forKey:@"uid"];
     [[DataService api] GET:@"submission" parameters:params success:callback failure:nil];
 }
 

@@ -8,12 +8,12 @@
 
 
 #import "RAViewController.h"
-#import "User.h"
+#import "DataStore.h"
 
 @interface RAViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *playerButton;
 @property (weak, nonatomic) IBOutlet UIButton *proButton;
-@property (weak, nonatomic) User *appUser;
+@property (weak, nonatomic) DataStore *ds;
 @end
 
 @implementation RAViewController
@@ -21,7 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.appUser = [User sharedInstance];
+    self.ds = [DataStore sharedInstance];
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,10 +30,10 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)startPlayer:(id)sender {
-    self.appUser.type = @"player";
+    self.ds.currentUser.type = @"player";
 }
 - (IBAction)startPro:(id)sender {
-    self.appUser.type = @"pro";
+    self.ds.currentUser.type = @"pro";
 
 }
 
