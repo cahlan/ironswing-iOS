@@ -7,11 +7,15 @@
 //
 
 #import "RAPlayerQueueCell.h"
+#import <AFNetworking/AFNetworking.h>
 #import "QueueViewController.h"
+#import "DataService.h"
+#import "DataStore.h"
 
 @interface QueueViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) DataStore *ds;
 
 @end
 
@@ -30,7 +34,20 @@
 {
     [super viewDidLoad];
     
+    self.ds = [DataStore sharedInstance];
+    
     self.tableView.dataSource = self;
+    
+    //get data
+    void (^success)(NSURLSessionDataTask *task, id responseObject) = ^void(NSURLSessionDataTask *task, id responseObject) {
+        self.ds.submissions = (NSArray *)responseObject;
+        self.ds.submissions = [[NSMutableArray alloc] initWithArray:[(NSArray *)responseObject mutableCopy]];
+        [self.tableView reloadData];
+    };
+    void (^failure)(NSURLSessionDataTask *task, NSError *error) = ^void(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"Error! %@", error);
+    };
+    [[DataService sharedInstance] getSubmissions:success failure:failure];
     
 }
 
@@ -49,7 +66,8 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    NSLog(@"%@", self.ds.submissions);
+    return [self.ds.submissions count];
 }
 
 

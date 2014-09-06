@@ -1,21 +1,21 @@
 //
-//  User.m
+//  DataStore.m
 //  ironswing
 //
 //  Created by Cahlan Sharp on 9/5/14.
 //  Copyright (c) 2014 Ryan Allred. All rights reserved.
 //
 
-#import "User.h"
+#import "DataStore.h"
 
-@implementation User
+@implementation DataStore
 
-+ (User *)sharedInstance
++ (DataStore *)sharedInstance
 {
-    static User *_sharedInstance = nil;
+    static DataStore *_sharedInstance = nil;
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
-        _sharedInstance = [[User alloc] init];
+        _sharedInstance = [[DataStore alloc] init];
     });
     return _sharedInstance;
 }

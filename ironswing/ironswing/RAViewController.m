@@ -21,7 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.appUser = [User instance];
+    self.appUser = [User sharedInstance];
 }
 
 - (void)didReceiveMemoryWarning

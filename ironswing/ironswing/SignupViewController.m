@@ -47,7 +47,7 @@
 
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user {
     
-    User *_user = [User instance];
+    User *_user = [User sharedInstance];
     _user.fb_id = user.objectID;
     
     self.profilePicture.profileID = _user.fb_id;
