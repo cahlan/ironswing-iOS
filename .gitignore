@@ -5,6 +5,6 @@
 # http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control?
 #
 # Pods/
-
-ironswing/ironswing.xcodeproj/xcuserdata
+ironswing/ironswing.xcworkspace/xcuserdata/
+ironswing/ironswing.xcodeproj/xcuserdata/
 ironswing/ironswing.xcodeproj/project.xcworkspace
