@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D6079446DBBB40418EB0C3BD"
+               BlueprintIdentifier = "B791F7E43F11456BB249EDDA"
                BuildableName = "libPods-ironswing.a"
                BlueprintName = "Pods-ironswing"
                ReferencedContainer = "container:Pods.xcodeproj">
